@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/homepage.css">
+  <title>Nestors Domain - Community</title>
+  </head>
+<body>
+  <div class="header-container">
+  <h1 style="text-align: left">
+  <a href="homepage.html">Nestors Domain</a>
+  </h1>
+  <form action="login_script.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <button type="submit">Login</button>
+      </form>
+   </div>
+
+  	<p style="text-align: right">
+  	<a href="game.html"><img height="62" width="189" src="images/homepage/GameNav1.png" alt="Learn more about the game." id="Game" ></a>
+  	<a href="community.html"><img height="62" width="189" src="images/homepage/CommunityNav1.png" alt="Community made content." id="Community" ></a>
+  	<a href="help.html"><img height="62" width="189" src="images/homepage/Help.png" alt="Everything you need to get account or game support." id="Help" ></a>
+  	</p>
+
+    <h2>Recent Forum Posts</h2>
+    <section>
+
+  <div class="post">
+    <div class="posted">
+    <h3 class="posted-title"><a href="#">Exciting New Feature!</a></h3>
+    <p class="post-sample">Check out the amazing new features added to our platform!</p>
+  </div>
+    <div class="meta">Posted by &nbsp; <span class="username"> JohnDoe &nbsp; </span><span class="timestamp"> 2024-07-26 10:00</span></div>
+  </div>
+
+  <div class="post">
+    <div class="posted">
+    <h3 class="posted-title"><a href="#">Urgent Bug Report</a></h3>
+    <p class="post-sample">I've encountered a critical bug that needs immediate attention.</p>
+  </div>
+    <div class="meta">Posted by &nbsp;<span class="username">JaneSmith &nbsp;</span><span class="timestamp">2024-07-26 12:30</span></div>
+  </div>
+
+  <div class="post">
+    <div class="posted">
+    <h3 class="posted-title"><a href="#">Question about API</a></h3>
+    <p class="post-sample">I'm having trouble understanding how to use a specific API endpoint.</p>
+  </div>
+    <div class="meta">Posted by &nbsp;<span class="username">PeterJones &nbsp;</span><span class="timestamp">2024-07-26 14:45</span></div>
+  </div>
+
+  </section>
+
+<h2>Create a New Post</h2>
+<form class="forum-create">
+  <label for="title">Title:</label><br>
+  <input class="post-title" type="text" id="title" name="title"><br>
+  <label for="content">Content:</label><br>
+  <textarea class="post-content" id="content" name="content"></textarea><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<button id="toggleButton">Create</button>
+
+<script>
+  const toggleButton = document.getElementById('toggleButton');
+  const form = document.querySelector('.forum-create');
+
+  form.style.display = 'none';
+
+  toggleButton.addEventListener('click', function() {
+    if (form.style.display === 'none') {
+      form.style.display = 'block';
+      toggleButton.textContent = 'Hide';
+    } else {
+      form.style.display = 'none';
+      toggleButton.textContent = 'Create';
+    }
+  });
+</script>
+
+  </body>
+</html>
