@@ -89,6 +89,16 @@ nav {
    color: #fff;
 }
 
+.post-title{
+   width: 600px
+}
+
+.post-content{
+  width: 600px;
+  height: 250px;
+}
+
+
 .image-container {
   display: flex;
   justify-content: center;
@@ -145,23 +155,41 @@ nav {
   margin-right: 20px;
 }
 
+
 .post {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
 }
 
-.post p, .post .meta {
-  display: flex;
-  align-items: center;
-}
-
-.post h3 {
-  font-size: 110%;
-  margin-bottom: 0; 
-}
-
-.post .meta {
-  font-size: 50%
+.meta {
   text-align: right;
-  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.posted {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.posted-title {
+font-size: 150%
+}
+
+.post-sample {
+  margin-top: 5px;
+}
+
+.forum-create{
+  align-items: center;
 }
