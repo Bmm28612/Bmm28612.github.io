@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/homepage.css" >
+  <title>Nestors Domain</title>
+  </head>
+<body>
+<div class="header-container">
+<h1 style="text-align: left">
+<a href="index.html">Nestors Domain</a>
+</h1>
+<form action="login_script.php" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <button type="submit">Login</button>
+    </form>
+ </div>
+
+	<p style="text-align: right">
+	<a href="game.html"><img height="62" width="189" src="images/homepage/GameNav1.png" alt="Learn more about the game." id="Game" ></a>
+	<a href="community.html"><img height="62" width="189" src="images/homepage/CommunityNav1.png" alt="Community made content." id="Community" ></a>
+	<a href="help.html"><img height="62" width="189" src="images/homepage/Help.png" alt="Everything you need to get account or game support." id="Help" ></a>
+	</p>
+<form method="post">
+    Your Name<br/>
+	<input type="text" name="Name" size="100"/>
+      <br/>
+	  <br/>
+    Your Email<br/>
+	  <input type="text" name="Email" size="100"/>
+      <br/>
+	  <br/>
+	Subject <br/>
+	  <input type="text" name="Subject" size="100"/>
+	  <br/>
+	  <br/>
+	Content<br/>
+	  <textarea name="Content" cols="100" rows="7">
+	  </textarea>
+	  <br/>
+	 <input type="submit"/>
+     <input type="reset"/>
+	 </form>
+</body>
+</html>
