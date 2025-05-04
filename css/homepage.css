@@ -16,10 +16,10 @@ h1 {
     font-weight: normal;
     font-size: 300%;
     font-family: Replay, serif;
-	color: purple;
+	color: #fff;
 }
 p {
-	text-align: right;
+	text-align: left;
     font-size: 80%;
     font-family: Gogh, sans-serif;
     margin-bottom: 20px;
@@ -49,6 +49,7 @@ section, form {
   font-family: Gogh, sans-serif;
   border-radius: 10px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  text-align: left;
 }
 
 h3 {
@@ -56,14 +57,15 @@ h3 {
     font-size: 100%;
     margin-bottom: 10px;
     font-family: Replay, serif;
-	color: purple;
+	color: #fff;
 }
 
 h4 {
 
     font-weight: bold;
-    font-size: 120%;
-    color: #fff;
+    font-size: 200%;
+    font-family: Replay, serif;
+    color: green;
 
 }
 
@@ -193,3 +195,46 @@ font-size: 150%
 .forum-create{
   align-items: center;
 }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  left: 0;
+  background-color: rgba(122, 88, 132, 0.35);
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s; 
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #818181;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
